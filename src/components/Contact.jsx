@@ -33,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_vkgykqk',
+        'template_0v5vldh',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Anirudh",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "anirudhrawat1@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'on1wO0Ojq5IAPl3j0'
       )
       .then(
         () => {
@@ -87,7 +87,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -134,3 +134,8 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+
+
+//Service ID: service_vkgykqk
+//templateID: template_0v5vldh
+// Public Key: gI0ybVnPt4RLdu3eymi8H
