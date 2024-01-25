@@ -42,15 +42,15 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile App Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Machine Learning",
       icon: backend,
     },
     {
@@ -116,7 +116,7 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "IT Student Assistant Dean’s Office",
       company_name: "Starbucks",
       icon: starbucks,
       iconBg: "#383E56",
