@@ -43,14 +43,28 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
+        {experience.work.map((item, index) => {
+          // Check if the item is an object (which has 'point' and 'tags')
+          if (typeof item === 'object' && item !== null) {
+            return (
+              <li key={`work-point-object-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+              {item.point}
+              {item.tags && item.tags.map((tag, idx) => (
+                <span key={`${tag.name}-${idx}`} className={`gap-1 text-[14px] font-bold ${tag.color}`}>
+                  #{tag.name} &nbsp;
+                </span>
+              ))}
+            </li>
+
+            );
+          } else {
+            return (
+              <li key={`work-point-string-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+                {item}
+              </li>
+            );
+          }
+        })}
       </ul>
     </VerticalTimelineElement>
   );

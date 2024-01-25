@@ -117,54 +117,167 @@ import {
   const experiences = [
     {
       title: "IT Student Assistant Dean’s Office",
-      company_name: "Starbucks",
+      company_name: "California State University, Dominguez Hills",
       icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      iconBg: "#FFFFFF",
+      date: "September 2023 - Present",
+      work: [
+        "Managed and updated websites for 10 distinct departments, resulting in a 20% increase in user engagement across all sites.",
+        "Experienced in greeting and assisting a diverse range of visitors at the dean's office, ensuring needs were met with a high level of customer service.",
+        {
+          point: "Developed an automated tool to improve work status visibility, leading to a 40% reduction in manual updates and a 60% faster ticket response through integrated email notifications. ",
+          tags : [
+            {
+            name: "angular",
+            color: "blue-text-gradient",
+            },
+            {
+              name: "firebase",
+              color: "pink-text-gradient",
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Student Assistant PHP Web Developer",
+      company_name: "California State University, Dominguez Hills",
+      icon: starbucks,
+      iconBg: "#FFFFFF",
+      date: "February 2023 - September 2024",
+      work: [
+        {
+          point: "Developed and enhanced 5+ websites and managed databases, optimizing data storage and retrieval. ",
+          tags : [
+            {
+            name: "php",
+            color: "green-text-gradient",
+            },
+            {
+              name: "mysql",
+              color: "pink-text-gradient",
+            }
+          ]
+        },
+        {
+          point: "Deployed and maintained 3 web servers using cPanel and Plesk, ensuring uninterrupted website availability. ",
+          tags : [
+            {
+            name: "cPanel",
+            color: "green-text-gradient",
+            },
+            {
+              name: "plesk",
+              color: "blue-text-gradient",
+            }
+          ]
+        },
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Software Developer",
+      company_name: "Mindfire Solutions",
       icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+      iconBg: "#F0EEEE",
+      date: "February 2021 - Jan 2023",
+      work: [
+        {
+          point: "Website development including front-end and backend along with added 3D gaming features, deployed using Azure App Service. ",
+          tags : [
+            {
+            name: ".net framework",
+            color: "green-text-gradient",
+            },
+            {
+              name: "aframe",
+              color: "pink-text-gradient",
+            },
+            {
+              name: "three.js",
+              color: "blue-text-gradient",
+            },
+            {
+              name: "azure app service",
+              color: "blue-text-gradient",
+            },
+            {
+              name: "azure ci/cd",
+              color: "green-text-gradient",
+            },
+          ]
+        },
+        {
+          point: "Led a 10-person global team, optimizing infrastructure design architecture and data structures, resulting in a 50% reduction in healthcare point-of-sale processing time. ",
+          tags : [
+            {
+            name: "asp.net",
+            color: "pink-text-gradient",
+            },
+            {
+              name: "windows service",
+              color: "green-text-gradient",
+            },
+            {
+              name: "microsoft mysql server",
+              color: "blue-text-gradient",
+            },
+          ]
+        },
+        {
+          point: "Automated daily processes, cut client server costs by 30%, and tracked progress using Azure-based solutions. ",
+          tags : [
+            {
+            name: "azure",
+            color: "pink-text-gradient",
+            },
+          ]
+        },
+        "Conducted code reviews for team members and troubleshooting to ensure code quality and consistency.",
+        {
+          point: "Collaborated in a fast-paced Agile environment and participated in daily scrum meetings and tracked project progress using Microsoft Azure DevOps and Jira. ",
+          tags : [
+            {
+            name: "microsoft azure devops",
+            color: "pink-text-gradient",
+            },
+            {
+              name: "jira",
+              color: "green-text-gradient",
+            },
+            {
+              name: "agile development",
+              color: "blue-text-gradient",
+            },
+          ]
+        }
+      ]
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Software Inern",
+      company_name: "AWC Solutions",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      date: "June 2018 - August 2018",
+      work: [
+        {
+          point: "Designed back-end web processing for a project focused on the delivery and maintenance of electrical equipment. ",
+          tags : [
+            {
+            name: "node.js",
+            color: "pink-text-gradient",
+            }
+          ]
+        },
+        {
+          point: "Optimized performance and scalability of the web application to accommodate increasing user demand and data growth. ",
+          tags : [
+            {
+            name: "react",
+            color: "green-text-gradient",
+            }
+          ]
+        }
       ],
     },
   ];
