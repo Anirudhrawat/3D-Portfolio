@@ -17,12 +17,15 @@ import {
     docker,
     meta,
     starbucks,
-    tesla,
+    upes,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    sandeep,
+    Patrick,
+    Chris
   } from "../assets";
   
   export const navLinks = [
@@ -33,6 +36,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "education",
+      title: "Education",
     },
     {
       id: "contact",
@@ -180,7 +187,7 @@ import {
       company_name: "Mindfire Solutions",
       icon: shopify,
       iconBg: "#F0EEEE",
-      date: "February 2021 - Jan 2023",
+      date: "February 2021 - January 2023",
       work: [
         {
           point: "Website development including front-end and backend along with added 3D gaming features, deployed using Azure App Service. ",
@@ -238,7 +245,7 @@ import {
           point: "Collaborated in a fast-paced Agile environment and participated in daily scrum meetings and tracked project progress using Microsoft Azure DevOps and Jira. ",
           tags : [
             {
-            name: "microsoft azure devops",
+            name: "azure devops",
             color: "pink-text-gradient",
             },
             {
@@ -285,27 +292,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
+        "I thought it was impossible to make a website as beautiful as our product, but Anirudh proved me wrong.",
+      name: "Sandeep Sharma",
       designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      company: "AWS Software",
+      image: sandeep,
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "Anirudh was one of the crucial person in our project. He completes alll the work before deadline and managed whole team.",
+      name: "Patrick Brown",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "T-Therapeutics",
+      image: Patrick,
+    },
+    {
+      testimonial:
+        "Anirudh optimized the whole system and saved the overall cost of the project. He has great problem-solving skills",
+      name: "Chris Shaw",
+      designation: "Manager",
+      company: "Colocals",
+      image: Chris,
     },
   ];
   
@@ -375,4 +382,23 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  const education = [
+    {
+      title: "Masters Of Computer Science",
+      company_name: "California State University, Dominguez Hills",
+      icon: starbucks,
+      iconBg: "#FFFFFF",
+      date: "January 2023 - December 2024",
+      work: ["Sofware Engineering, Advance Programming, Design and Analysis of Algorithm, Introduction to Data Science, Big Data Analytics, Human Computer Interaction"]
+    },
+    {
+      title: "Bachelor Of Computer Science",
+      company_name: "University of Petroleum and Energy Studies",
+      icon: upes,
+      iconBg: "#FFFFFF",
+      date: "August 2016 - September 2020",
+      work:[ "Data Structure, Software Development Lifecycle, Advance Database Systems, Design and Analysis of Algorithm, Advance Programming, Artificial Intelligence"]
+    }
+    
+  ];
+  export { services, technologies, experiences, testimonials, projects, education };
