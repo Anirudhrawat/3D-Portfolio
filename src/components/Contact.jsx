@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { linkedin, github } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -74,7 +75,14 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        <div className="flex gap-4">
+          <a href="https://www.linkedin.com/in/anirudhsinghrawat/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" className="w-10 h-10"/>
+          </a>
+          <a href="https://github.com/Anirudhrawat" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="GitHub" className="w-10 h-10"/>
+          </a>
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}

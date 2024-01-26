@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { education } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -43,48 +43,34 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.work.map((item, index) => {
-          // Check if the item is an object (which has 'point' and 'tags')
-          if (typeof item === 'object' && item !== null) {
-            return (
-              <li key={`work-point-object-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
-              {item.point}
-              {item.tags && item.tags.map((tag, idx) => (
-                <span key={`${tag.name}-${idx}`} className={`gap-1 text-[14px] font-bold ${tag.color}`}>
-                  #{tag.name} &nbsp;
-                </span>
-              ))}
-            </li>
-
-            );
-          } else {
-            return (
-              <li key={`work-point-string-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
-                {item}
-              </li>
-            );
-          }
-        })}
+        {experience.work.map((point, index) => (
+          <li
+            key={`experience-point-${index}`}
+            className='text-white-100 text-[14px] pl-1 tracking-wider'
+          >
+            {point}
+          </li>
+        ))}
       </ul>
     </VerticalTimelineElement>
   );
 };
 
-const Experience = () => {
+const Education = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          My journey in knowledge
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          Education.
         </h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {education.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
@@ -96,4 +82,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Education, "education");
