@@ -300,7 +300,7 @@ import {
     },
     {
       testimonial:
-        "Anirudh was one of the crucial person in our project. He completes alll the work before deadline and managed whole team.",
+        "Anirudh was one of the crucial person in our project. He completes all the work before deadline and managed whole team.",
       name: "Patrick Brown",
       designation: "CTO",
       company: "T-Therapeutics",
