@@ -25,7 +25,10 @@ import {
     threejs,
     sandeep,
     Patrick,
-    Chris
+    Chris,
+    fingerprint,
+    azure,
+    graphql
   } from "../assets";
   
   export const navLinks = [
@@ -318,67 +321,63 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Fingerprint-Enhanced Credit Card Payment Interface",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "This interface revolutionizes credit card transactions by integrating fingerprint authentication, offering a swift and secure payment process. By employing biometric verification, it significantly reduces transaction time while enhancing the overall security of the payment procedure.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "twilio",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: fingerprint,
+      source_code_link: "https://github.com/Anirudhrawat/Credit-card",
     },
     {
-      name: "Job IT",
+      name: "Azure Trigger Functions",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "This project involves the creation of an HTTP Trigger function within Azure, designed to initiate the execution of a 'Push' action. This action will log events directly to a monitoring interface integrated within the Azure Functions environment of my account, ensuring real-time tracking and enhanced oversight of function performance.",
       tags: [
         {
-          name: "react",
+          name: "C#",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Azure",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: azure,
+      source_code_link: "https://github.com/Anirudhrawat/AzureHttpTriggerFunction",
     },
     {
-      name: "Trip Guide",
+      name: "CURD operation using GraphQL",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Implementing CRUD operations with GraphQL enables efficient data management through a single API endpoint. This approach simplifies querying, mutation, and subscription processes for creating, reading, updating, and deleting data, providing a more intuitive and streamlined interaction with databases for developers.",
       tags: [
         {
-          name: "nextjs",
+          name: "C#",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "HotChocolate",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "GraphQL",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: graphql,
+      source_code_link: "https://github.com/Anirudhrawat/GraphQLMutationBasicCRUD",
     },
   ];
   

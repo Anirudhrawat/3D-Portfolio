@@ -34,6 +34,9 @@ import linkedin from "./linkedin.png";
 import sandeep from "./Faces/Sandeep.png";
 import Patrick from "./Faces/Patrick.png";
 import Chris from "./Faces/Chris.png";
+import fingerprint from "./fingerprint.png";
+import azure from "./Azure.png";
+import graphql from "./graphql.png";
 
 export {
   logo,
@@ -67,5 +70,8 @@ export {
   linkedin,
   sandeep,
   Patrick,
-  Chris
+  Chris,
+  fingerprint,
+  azure,
+  graphql
 };
